@@ -19,6 +19,13 @@
                         </div>
 
                         <a href="#" class="card-link">Card link</a>
+
+                            <div>
+                                <favorite
+                                    :post={{ $post->id }}
+                                    :favorited={{ $post->favorited() ? 'true' : 'false' }}
+                                ></favorite>
+                            </div>
                     </div>
                 </div>
             @empty

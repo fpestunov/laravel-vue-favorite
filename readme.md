@@ -67,3 +67,7 @@ protected $redirectTo = '/';
 - регистрируем компонент в `resources/js/app.js`;
 - компилируем стили и скрипты `npm run dev`;
 
+### используем Favorite компонент
+
+- добавим компонент в нашу вью с постами `resources/views/posts/index.blade.php`;
+- добавим метод `favorited()` в модель `app/Post.php`;
