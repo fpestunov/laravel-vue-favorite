@@ -60,3 +60,10 @@ protected $redirectTo = '/';
 - посмотрим на результат `php artisan serve`;
 
 - добавляем в контроллер методы `fovorite` и `unfovorite`;
+
+### добавляем Vue.js
+
+- добавим компонент `Favorite.vue` в папке `resources/js/components`;
+- регистрируем компонент в `resources/js/app.js`;
+- компилируем стили и скрипты `npm run dev`;
+
