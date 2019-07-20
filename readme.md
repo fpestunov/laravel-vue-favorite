@@ -31,8 +31,17 @@ php artisan make:seeder UsersTableSeeder
 php artisan make:seeder PostsTableSeeder
 ```
 - в файле `database/seeds/DatabaseSeeder.php` добавим ссылки на эти сидеры;
-- теперь заполним базу данными `php artisan db:seed`
+- теперь заполним базу данными `php artisan db:seed`;
 
 ### аутентификация пользователей
 
-- настроим аутентификацию `php artisan make:auth` (отмечать полюбившиеся сообщения может только авторизованный пользователь)
+- настроим аутентификацию `php artisan make:auth` (отмечать полюбившиеся сообщения может только авторизованный пользователь);
+
+### настройка роутов
+
+- добавим роуты в `routes/web.php`;
+- меняем редиректы в файлах `LoginController.php` и `RegisterController.php`:
+```
+protected $redirectTo = '/home';
+protected $redirectTo = '/';
+```
