@@ -45,3 +45,7 @@ php artisan make:seeder PostsTableSeeder
 protected $redirectTo = '/home';
 protected $redirectTo = '/';
 ```
+
+### настройка связи пользователей и любимы постов
+
+- добавим связи в файле `app/User.php`;
