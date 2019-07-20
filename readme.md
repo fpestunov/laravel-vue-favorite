@@ -49,3 +49,13 @@ protected $redirectTo = '/';
 ### настройка связи пользователей и любимы постов
 
 - добавим связи в файле `app/User.php`;
+
+### добавляем контроллер постов
+
+- создаем контроллер `php artisan make:controller PostsController`;
+- добавим метод `index()` в контроллер;
+- добавим ссылки в `resources/views/layouts/app.blade.php`;
+- теперь созадим вью `resources/views/posts/index.blade.php`;
+- скомпилируем css `npm run dev`;
+- посмотрим на результат `php artisan serve`;
+
