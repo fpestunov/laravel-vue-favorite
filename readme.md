@@ -50,7 +50,7 @@ protected $redirectTo = '/';
 
 - добавим связи в файле `app/User.php`;
 
-### добавляем контроллер постов
+### добавляем и настраиваем контроллер постов
 
 - создаем контроллер `php artisan make:controller PostsController`;
 - добавим метод `index()` в контроллер;
@@ -59,3 +59,4 @@ protected $redirectTo = '/';
 - скомпилируем css `npm run dev`;
 - посмотрим на результат `php artisan serve`;
 
+- добавляем в контроллер методы `fovorite` и `unfovorite`;
